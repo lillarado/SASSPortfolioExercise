@@ -360,6 +360,10 @@
   grid-gap: 2rem;
   font-size: 1.5rem;
 }
+.contact .socialIcons {
+  position: initial;
+  margin-top: 2rem;
+}
 
 body {
   background: #272727;
