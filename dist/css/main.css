@@ -365,6 +365,67 @@
   margin-top: 2rem;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .menuBtn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+  }
+  .nav .menuNav {
+    display: block;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    height: 100%;
+    background: transparent;
+    text-align: right;
+  }
+  .nav .menuNavItem {
+    display: inline;
+    padding-right: 1.5rem;
+  }
+  .nav .menuNavLink {
+    font-size: 1.5rem;
+  }
+  .aboutBio {
+    font-size: 1.5rem;
+  }
+  .projectsBioImg {
+    height: 40vh;
+  }
+  .projectsItems {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects .text-secondary {
+    font-size: 3rem;
+  }
+  .contactList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menuBtn {
+    visibility: hidden;
+  }
+  .projectsItems {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .contactList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .projectsBioImg {
+    height: 50vh;
+  }
+}
 body {
   background: #272727;
   color: #fff;
