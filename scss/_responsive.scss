@@ -1,0 +1,70 @@
+@include media-md {
+    .menuBtn {
+        visibility: hidden;
+    }
+
+    .nav {
+        visibility: visible;
+
+        .menuNav {
+            display: block;
+            transform: translateY(0);
+            height: 100%;
+            background: transparent;
+            text-align: right;
+
+            &Item {
+                display: inline;
+                padding-right: 1.5rem;
+            }
+
+            &Link {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .aboutBio {
+        font-size: 1.5rem;
+    }
+
+    .projects {
+        &BioImg {
+            height: 40vh;
+        }
+
+        &Items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .text-secondary {
+            font-size: 3rem;
+        }
+    }
+
+    .contactList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@include media-lg {
+    .menuBtn {
+        visibility: hidden;
+    }
+
+    .projects {
+        &Items {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .contactList {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@include media-xl {
+    .projectsBioImg {
+        height: 50vh;
+    }
+}
